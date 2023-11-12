@@ -2,3 +2,4 @@
 
 def default_hparams():
     return HParams(
+        n_vocab=0,
