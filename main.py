@@ -28,3 +28,4 @@ def norm(x, scope, *, axis=-1, epsilon=1e-5):
     with tf.variable_scope(scope):
         n_state = x.shape[-1].value
         g = tf.get_variable('g', [n_state], initializer=tf.constant_initializer(1))
+        b = tf.get_variable('b', [n_state], initializer=tf.constant_initializer(0))
