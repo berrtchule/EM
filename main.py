@@ -64,3 +64,4 @@ def attention_mask(nd, ns, *, dtype):
     return tf.cast(m, dtype)
 
 
+def default_hparams():
