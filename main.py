@@ -65,3 +65,4 @@ def attention_mask(nd, ns, *, dtype):
 
 
 def default_hparams():
+    return HParams(
