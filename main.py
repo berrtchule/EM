@@ -69,3 +69,4 @@ def default_hparams():
         n_vocab=0,
         n_ctx=1024,
         n_embd=768,
+        n_head=12,
