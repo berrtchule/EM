@@ -71,3 +71,4 @@ def default_hparams():
         n_embd=768,
         n_head=12,
         n_layer=12,
+    )
