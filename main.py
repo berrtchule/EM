@@ -87,3 +87,4 @@ def softmax(x, axis=-1):
 def gelu(x):
     return 0.5*x*(1+tf.tanh(np.sqrt(2/np.pi)*(x+0.044715*tf.pow(x, 3))))
 
+def norm(x, scope, *, axis=-1, epsilon=1e-5):
