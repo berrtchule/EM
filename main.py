@@ -97,3 +97,4 @@ def norm(x, scope, *, axis=-1, epsilon=1e-5):
         s = tf.reduce_mean(tf.square(x-u), axis=axis, keepdims=True)
         x = (x - u) * tf.rsqrt(s + epsilon)
         x = x*g + b
+        return x
