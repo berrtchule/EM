@@ -100,3 +100,4 @@ def norm(x, scope, *, axis=-1, epsilon=1e-5):
         return x
 
 def split_states(x, n):
+    """Reshape the last dimension of x into [n, x.shape[-1]/n]."""
