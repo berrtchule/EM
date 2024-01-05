@@ -107,3 +107,4 @@ def split_states(x, n):
 def merge_states(x):
     """Smash the last two dimensions of x into a single dimension."""
     *start, a, b = shape_list(x)
+    return tf.reshape(x, start + [a*b])
