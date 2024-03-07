@@ -128,3 +128,4 @@ def attention_mask(nd, ns, *, dtype):
     return tf.cast(m, dtype)
 def default_hparams():
     return HParams(
+        n_vocab=0,
