@@ -146,3 +146,4 @@ def softmax(x, axis=-1):
     ex = tf.exp(x)
     return ex / tf.reduce_sum(ex, axis=axis, keepdims=True)
 
+def gelu(x):
