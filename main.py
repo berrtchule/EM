@@ -161,3 +161,4 @@ def norm(x, scope, *, axis=-1, epsilon=1e-5):
         x = x*g + b
         return x
 
+def split_states(x, n):
