@@ -172,3 +172,4 @@ def merge_states(x):
     return tf.reshape(x, start + [a*b])
 
 def conv1d(x, scope, nf, *, w_init_stdev=0.02):
+    with tf.variable_scope(scope):
