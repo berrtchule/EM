@@ -179,3 +179,4 @@ def conv1d(x, scope, nf, *, w_init_stdev=0.02):
         c = tf.reshape(tf.matmul(tf.reshape(x, [-1, nx]), tf.reshape(w, [-1, nf]))+b, start+[nf])
         return c
 
+def attention_mask(nd, ns, *, dtype):
