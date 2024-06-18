@@ -190,3 +190,4 @@ def attention_mask(nd, ns, *, dtype):
     return tf.cast(m, dtype)
 
 
+def attn(x, scope, n_state, *, past, hparams):
