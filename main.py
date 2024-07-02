@@ -204,3 +204,4 @@ def attn(x, scope, n_state, *, past, hparams):
         # Reverse of split_heads
         return merge_states(tf.transpose(x, [0, 2, 1, 3]))
 
+    def mask_attn_weights(w):
