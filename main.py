@@ -223,3 +223,4 @@ def attn(x, scope, n_state, *, past, hparams):
         return a
 
     with tf.variable_scope(scope):
+        c = conv1d(x, 'c_attn', n_state*3)
