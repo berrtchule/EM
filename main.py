@@ -226,3 +226,4 @@ def attn(x, scope, n_state, *, past, hparams):
         c = conv1d(x, 'c_attn', n_state*3)
         q, k, v = map(split_heads, tf.split(c, 3, axis=2))
         present = tf.stack([k, v], axis=1)
+        if past is not None:
