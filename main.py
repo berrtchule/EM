@@ -228,3 +228,4 @@ def attn(x, scope, n_state, *, past, hparams):
         present = tf.stack([k, v], axis=1)
         if past is not None:
 
+def default_hparams():
