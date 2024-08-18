@@ -230,3 +230,4 @@ def attn(x, scope, n_state, *, past, hparams):
 
 def default_hparams():
     return HParams(
+        n_vocab=0,
