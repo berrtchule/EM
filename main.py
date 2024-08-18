@@ -229,3 +229,4 @@ def attn(x, scope, n_state, *, past, hparams):
         if past is not None:
 
 def default_hparams():
+    return HParams(
