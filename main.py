@@ -244,3 +244,4 @@ def shape_list(x):
     return [dynamic[i] if s is None else s for i, s in enumerate(static)]
 
 def softmax(x, axis=-1):
+    x = x - tf.reduce_max(x, axis=axis, keepdims=True)
