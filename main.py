@@ -259,3 +259,4 @@ def norm(x, scope, *, axis=-1, epsilon=1e-5):
         b = tf.get_variable('b', [n_state], initializer=tf.constant_initializer(0))
         u = tf.reduce_mean(x, axis=axis, keepdims=True)
         s = tf.reduce_mean(tf.square(x-u), axis=axis, keepdims=True)
+        x = (x - u) * tf.rsqrt(s + epsilon)
