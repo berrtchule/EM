@@ -262,3 +262,4 @@ def norm(x, scope, *, axis=-1, epsilon=1e-5):
         x = (x - u) * tf.rsqrt(s + epsilon)
         x = x*g + b
         return x
+
