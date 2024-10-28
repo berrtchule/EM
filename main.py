@@ -280,3 +280,4 @@ def conv1d(x, scope, nf, *, w_init_stdev=0.02):
         b = tf.get_variable('b', [nf], initializer=tf.constant_initializer(0))
         c = tf.reshape(tf.matmul(tf.reshape(x, [-1, nx]), tf.reshape(w, [-1, nf]))+b, start+[nf])
         return c
+
