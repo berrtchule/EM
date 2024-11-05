@@ -293,3 +293,4 @@ def attention_mask(nd, ns, *, dtype):
 
 
 def attn(x, scope, n_state, *, past, hparams):
+    assert x.shape.ndims == 3  # Should be [batch, sequence, features]
