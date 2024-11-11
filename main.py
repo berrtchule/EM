@@ -303,3 +303,4 @@ def attn(x, scope, n_state, *, past, hparams):
         return tf.transpose(split_states(x, hparams.n_head), [0, 2, 1, 3])
 
     def merge_heads(x):
+        # Reverse of split_heads
