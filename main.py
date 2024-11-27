@@ -314,3 +314,4 @@ def attn(x, scope, n_state, *, past, hparams):
         w = w*b - tf.cast(1e10, w.dtype)*(1-b)
         return w
 
+    def multihead_attn(q, k, v):
