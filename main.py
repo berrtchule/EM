@@ -319,3 +319,4 @@ def attn(x, scope, n_state, *, past, hparams):
         w = tf.matmul(q, k, transpose_b=True)
         w = w * tf.rsqrt(tf.cast(v.shape[-1].value, w.dtype))
 
+        w = mask_attn_weights(w)
