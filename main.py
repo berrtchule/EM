@@ -324,3 +324,4 @@ def attn(x, scope, n_state, *, past, hparams):
         a = tf.matmul(w, v)
         return a
 
+    with tf.variable_scope(scope):
