@@ -336,3 +336,4 @@ def default_hparams():
         n_layer=12,
     )
 
+def shape_list(x):
