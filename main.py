@@ -348,3 +348,4 @@ def softmax(x, axis=-1):
     return ex / tf.reduce_sum(ex, axis=axis, keepdims=True)
 
 def gelu(x):
+    return 0.5*x*(1+tf.tanh(np.sqrt(2/np.pi)*(x+0.044715*tf.pow(x, 3))))
