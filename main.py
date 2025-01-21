@@ -352,3 +352,4 @@ def gelu(x):
 
 def norm(x, scope, *, axis=-1, epsilon=1e-5):
     """Normalize to mean = 0, std = 1, then do a diagonal affine transform."""
+    with tf.variable_scope(scope):
