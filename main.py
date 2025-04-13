@@ -386,3 +386,4 @@ def attention_mask(nd, ns, *, dtype):
     Same as tf.matrix_band_part(tf.ones([nd, ns]), -1, ns-nd), but doesn't produce garbage on TPUs.
     """
     i = tf.range(nd)[:,None]
+    j = tf.range(ns)
