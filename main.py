@@ -390,3 +390,4 @@ def attention_mask(nd, ns, *, dtype):
     m = i >= j - ns + nd
     return tf.cast(m, dtype)
 
+
