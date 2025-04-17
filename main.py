@@ -397,3 +397,4 @@ def attn(x, scope, n_state, *, past, hparams):
     if past is not None:
         assert past.shape.ndims == 5  # Should be [batch, 2, heads, sequence, features], where 2 is [k, v]
 
+    def split_heads(x):
