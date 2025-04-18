@@ -400,3 +400,4 @@ def attn(x, scope, n_state, *, past, hparams):
     def split_heads(x):
         # From [batch, sequence, features] to [batch, heads, sequence, features]
         return tf.transpose(split_states(x, hparams.n_head), [0, 2, 1, 3])
+
