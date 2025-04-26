@@ -406,3 +406,4 @@ def attn(x, scope, n_state, *, past, hparams):
         return merge_states(tf.transpose(x, [0, 2, 1, 3]))
 
     def mask_attn_weights(w):
+        # w has shape [batch, heads, dst_sequence, src_sequence], where information flows from src to dst.
