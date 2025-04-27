@@ -408,3 +408,4 @@ def attn(x, scope, n_state, *, past, hparams):
     def mask_attn_weights(w):
         # w has shape [batch, heads, dst_sequence, src_sequence], where information flows from src to dst.
         _, _, nd, ns = shape_list(w)
+        b = attention_mask(nd, ns, dtype=w.dtype)
