@@ -409,3 +409,4 @@ def attn(x, scope, n_state, *, past, hparams):
         # w has shape [batch, heads, dst_sequence, src_sequence], where information flows from src to dst.
         _, _, nd, ns = shape_list(w)
         b = attention_mask(nd, ns, dtype=w.dtype)
+        b = tf.reshape(b, [1, 1, nd, ns])
