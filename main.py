@@ -420,3 +420,4 @@ def attn(x, scope, n_state, *, past, hparams):
 
         w = mask_attn_weights(w)
         w = softmax(w)
+        a = tf.matmul(w, v)
