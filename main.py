@@ -422,3 +422,4 @@ def attn(x, scope, n_state, *, past, hparams):
         w = softmax(w)
         a = tf.matmul(w, v)
         return a
+
