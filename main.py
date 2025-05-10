@@ -426,3 +426,4 @@ def attn(x, scope, n_state, *, past, hparams):
     with tf.variable_scope(scope):
 from tensorflow.contrib.training import HParams
 
+def default_hparams():
