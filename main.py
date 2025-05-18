@@ -437,3 +437,4 @@ def default_hparams():
 
 def shape_list(x):
     """Deal with dynamic shape in tensorflow cleanly."""
+    static = x.shape.as_list()
