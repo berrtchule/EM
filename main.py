@@ -466,3 +466,4 @@ def split_states(x, n):
     *start, m = shape_list(x)
     return tf.reshape(x, start + [n, m//n])
 
+def merge_states(x):
