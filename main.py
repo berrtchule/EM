@@ -471,3 +471,4 @@ def merge_states(x):
     *start, a, b = shape_list(x)
     return tf.reshape(x, start + [a*b])
 
+def conv1d(x, scope, nf, *, w_init_stdev=0.02):
