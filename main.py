@@ -481,3 +481,4 @@ def conv1d(x, scope, nf, *, w_init_stdev=0.02):
 
 def attention_mask(nd, ns, *, dtype):
     """1's in the lower triangle, counting from the lower right corner.
+
